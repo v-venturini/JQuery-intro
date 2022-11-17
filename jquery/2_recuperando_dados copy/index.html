@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução JQuery</title>
+    <script type="teste/javascript" src="js/jquery-3.6.1.min.js"></script>
+
+</head>
+<body>
+    <form>
+        <input type="text" name="nome" class="nome" placeholder="Nome">
+        <input type="text" name="sobrenome" class="sobrenome" placeholder="Sobrenome">
+        <button onclick="pegarvalor()">Executar</button>
+    </form>
+
+    <script type="text/javascript">
+        function pegarvalor(){
+            var nome = document.querySelector('.nome').value;
+            var sobrenome = document.querySelector('.sobrenome').value;
+
+            alert("Seja Bem Vindo " + nome + " " + sobrenome); 
+            console.log(nome); 
+        }
+    </script>
+</body>
+</html>
